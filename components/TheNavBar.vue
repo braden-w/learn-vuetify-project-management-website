@@ -13,7 +13,13 @@
       </v-btn>
     </v-toolbar>
     <v-navigation-drawer v-model="drawer" app class="primary">
-      <p>test</p>
+      <v-list>
+        <v-list-item>
+          <v-list-item-action>
+            <v-icon class="white--text">mdi-view-dashboard</v-icon>
+          </v-list-item-action>
+        </v-list-item>
+      </v-list>
     </v-navigation-drawer>
   </nav>
 </template>
