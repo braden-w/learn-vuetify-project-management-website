@@ -68,3 +68,15 @@ export default {
   },
 }
 </script>
+<style>
+
+.project.complete{
+  border-left: 4px solid #3CD1C2;
+}
+.project.ongoing{
+  border-left: 4px solid orange
+}
+.project.overdue{
+  border-left: 4px solid tomato;
+}
+</style>
