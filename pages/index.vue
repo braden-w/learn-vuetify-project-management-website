@@ -8,6 +8,10 @@
       <v-icon left>mdi-email</v-icon>
       <span>Email me</span>
     </v-btn>
+    <v-btn small depressed class="pink white--text">
+      <v-icon left>mdi-email</v-icon>
+      <span>Email me</span>
+    </v-btn>
   </div>
 </template>
 
