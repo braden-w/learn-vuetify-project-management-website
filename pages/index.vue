@@ -15,6 +15,7 @@
     <v-btn large depressed class="pink white--text">
       <v-icon left>mdi-email</v-icon>
       <span>Email me</span>
+      <v-icon right>mdi-email</v-icon>
     </v-btn>
   </div>
 </template>
