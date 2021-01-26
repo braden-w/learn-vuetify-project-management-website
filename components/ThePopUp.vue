@@ -5,7 +5,9 @@
         Create Project
       </v-btn>
     </template>
-    <v-card> Project settings</v-card>
+    <v-card>
+      <v-card-title>Add New Project</v-card-title>
+    </v-card>
   </v-dialog>
 </template>
 
