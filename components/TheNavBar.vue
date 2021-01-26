@@ -13,6 +13,12 @@
       </v-btn>
     </v-toolbar>
     <v-navigation-drawer v-model="drawer" app class="primary">
+      <div class="d-flex flex-column align-center justify-center">
+        <v-avatar size="100">
+          <img src="@/assets/avatar-1.png" alt="" />
+        </v-avatar>
+        <p class="white--text subtitle-1 mt-1">Net Ninja</p>
+      </div>
       <v-list>
         <v-list-item
           v-for="link in links"
