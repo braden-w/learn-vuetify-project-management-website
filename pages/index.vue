@@ -7,6 +7,7 @@
       beatae, quas dicta consequatur repudiandae libero aliquam cupiditate
       porro?
     </p>
+    <h4 class="display-1">Display 1</h4>
   </div>
 </template>
 
