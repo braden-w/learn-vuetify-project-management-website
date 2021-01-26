@@ -19,7 +19,7 @@
             label="Information"
             prepend-icon="mdi-pencil"
           />
-          <v-btn class="sucess mx-0 mt-3">Add project</v-btn>
+          <v-btn class="success">Add project</v-btn>
         </v-form>
       </v-card-text>
     </v-card>
@@ -33,6 +33,11 @@ export default {
       title: '',
       content: '',
     }
+  },
+  methods: {
+    submit() {
+      console.log(this.title, this.content)
+    },
   },
 }
 </script>
