@@ -1,8 +1,9 @@
 <template>
   <div class="dashboard">
-    <h1 class="subtitle-1 grey--text">Dashboard</h1>
     <v-container class="my-5">
-      <v-row class="mb-3">
+      <h1 class="subtitle-1 grey--text">Dashboard</h1>
+      <v-divider></v-divider>
+      <v-row class="ma-3 mb-1">
         <v-tooltip v-for="sort in sorts" :key="sort.query" top>
           <template #activator="{ on: onButton }">
             <v-btn
@@ -19,33 +20,35 @@
           <span>Sort projects by {{ sort.title }}</span>
         </v-tooltip>
       </v-row>
-      <v-card v-for="project in projects" :key="project.title" class="pa-3">
-        <v-row :class="`project ${project.status}`">
-          <v-col cols="12" md="6">
-            <div class="caption grey--text">Project Title</div>
-            <div>{{ project.title }}</div>
-          </v-col>
-          <v-col cols="6" md="2">
-            <div class="caption grey--text">Person</div>
-            <div>{{ project.person }}</div>
-          </v-col>
-          <v-col cols="6" md="2">
-            <div class="caption grey--text">Due</div>
-            <div>{{ project.due }}</div>
-          </v-col>
-          <v-col cols="22" md="2">
-            <div id="chips-container" class="right">
-              <v-chip
-                small
-                my-auto
-                :class="`${project.status} caption white--text `"
-              >
-                {{ project.status }}
-              </v-chip>
-            </div>
-          </v-col>
-        </v-row>
-      </v-card>
+      <v-container fluid
+        ><v-card v-for="project in projects" :key="project.title" class="pa-3">
+          <v-row :class="`project ${project.status}`">
+            <v-col cols="12" md="6">
+              <div class="caption grey--text">Project Title</div>
+              <div>{{ project.title }}</div>
+            </v-col>
+            <v-col cols="6" md="2">
+              <div class="caption grey--text">Person</div>
+              <div>{{ project.person }}</div>
+            </v-col>
+            <v-col cols="6" md="2">
+              <div class="caption grey--text">Due</div>
+              <div>{{ project.due }}</div>
+            </v-col>
+            <v-col cols="22" md="2">
+              <div id="chips-container" class="right">
+                <v-chip
+                  small
+                  my-auto
+                  :class="`${project.status} caption white--text `"
+                >
+                  {{ project.status }}
+                </v-chip>
+              </div>
+            </v-col>
+          </v-row>
+        </v-card></v-container
+      >
     </v-container>
   </div>
 </template>
