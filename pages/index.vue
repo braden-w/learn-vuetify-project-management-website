@@ -9,6 +9,7 @@
     </p>
     <h4 class="display-1">Display 1</h4>
     <p class="headline">This is a headline</p>
+    <p class="subheading">This is a subheading</p>
   </div>
 </template>
 
