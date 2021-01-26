@@ -16,9 +16,8 @@
             <div class="caption grey--text">Due</div>
             <div>{{ project.due }}</div>
           </v-col>
-          <v-col cols="22" md="2"
-            ><div class="caption grey--text">Status</div>
-            <div>{{ project.status }}</div>
+          <v-col cols="22" md="2">
+            <v-chip>{{ project.status }}</v-chip>
           </v-col>
         </v-row>
       </v-card>
