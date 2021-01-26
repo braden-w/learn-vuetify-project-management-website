@@ -2,7 +2,14 @@
   <div class="dashboard">
     <h1 class="subtitle-1 grey--text">Dashboard</h1>
     <v-container class="my-5">
-      <v-row class="mb-3"></v-row>
+      <v-row class="mb-3">
+        <v-btn small flat color="grey">
+          <v-icon left>mdi-folder</v-icon>
+        </v-btn>
+        <v-btn small flat color="grey">
+          <v-icon left>mdi-account</v-icon>
+        </v-btn>
+      </v-row>
       <v-card v-for="project in projects" :key="project.title" class="pa-3">
         <v-row :class="`project ${project.status}`">
           <v-col cols="12" md="6">
