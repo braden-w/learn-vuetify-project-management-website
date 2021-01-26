@@ -3,13 +3,16 @@
     <h1 class="subtitle-1 grey--text">Dashboard</h1>
     <v-container class="my-5">
       <v-row class="mb-3">
-        <v-btn small flat color="grey" @click="sortBy('title')">
-          <v-icon left>mdi-folder</v-icon>
-          <span class="caption text-lowercase">By project name</span>
-        </v-btn>
-        <v-btn small flat color="grey" @click="sortBy('person')">
-          <v-icon left>mdi-account</v-icon>
-          <span class="caption text-lowercase">By person</span>
+        <v-btn
+          v-for="sort in sorts"
+          :key="sort.query"
+          small
+          flat
+          color="grey"
+          @click="sortBy(sort.query)"
+        >
+          <v-icon left>{{ sort.icon }}</v-icon>
+          <span class="caption text-lowercase">By {{ sort.title }}</span>
         </v-btn>
       </v-row>
       <v-card v-for="project in projects" :key="project.title" class="pa-3">
@@ -80,6 +83,11 @@ export default {
           content:
             'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt consequuntur eos eligendi illum minima adipisci deleniti, dicta mollitia enim explicabo fugiat quidem ducimus praesentium voluptates porro molestias non sequi animi!',
         },
+      ],
+      sorts: [
+        { icon: 'mdi-folder', title: 'project name', query: 'title' },
+        { icon: 'mdi-account', title: 'person', query: 'person' },
+        { icon: 'mdi-folder', title: 'project status', query: 'status' },
       ],
     }
   },
