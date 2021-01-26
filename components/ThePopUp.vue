@@ -9,16 +9,14 @@
       <v-card-title>Add New Project</v-card-title>
       <v-card-text>
         <v-form class="px-3">
-          <v-text-field
-            v-model="title"
-            label="Title"
-            prepend-icon="mdi-folder"
-          ></v-text-field>
+          <v-text-field v-model="title" label="Title" prepend-icon="mdi-folder">
+          </v-text-field>
           <v-textarea
             v-model="content"
             label="Information"
             prepend-icon="mdi-pencil"
-          ></v-textarea>
+          >
+          </v-textarea>
         </v-form>
       </v-card-text>
     </v-card>
