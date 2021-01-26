@@ -4,8 +4,13 @@
     <v-container class="my-5">
       <v-row class="mb-3">
         <v-tooltip v-for="sort in sorts" :key="sort.query" top>
-          <template #activator="{ on, attrs }">
-            <v-btn small flat color="light-grey" @click="sortBy(sort.query)"
+          <template #activator="{ on: onButton }">
+            <v-btn
+              small
+              flat
+              color="light-grey"
+              v-on="onButton"
+              @click="sortBy(sort.query)"
               ><v-icon left>{{ sort.icon }}</v-icon>
               <span class="caption text-lowercase">By {{ sort.title }}</span>
             </v-btn>
