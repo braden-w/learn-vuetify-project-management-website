@@ -8,20 +8,20 @@
             ><div class="caption grey--text">Project Title</div>
             <div>{{ project.title }}</div>
           </v-col>
-          <v-col cols="6" md="2"
-            ><div class="caption grey--text">Person</div>
-            <div>{{ project.person }}</div></v-col
-          >
+          <v-col cols="6" md="2">
+            <div class="caption grey--text">Person</div>
+            <div>{{ project.person }}</div>
+          </v-col>
           <v-col cols="6" md="2"
             ><div class="caption grey--text">Due</div>
-            <div>{{ project.due }}</div></v-col
-          >
+            <div>{{ project.due }}</div>
+          </v-col>
           <v-col cols="22" md="2"
             ><div class="caption grey--text">Status</div>
-            <div>{{ project.status }}</div></v-col
-          >
-        </v-row></v-card
-      >
+            <div>{{ project.status }}</div>
+          </v-col>
+        </v-row>
+      </v-card>
     </v-container>
   </div>
 </template>
@@ -69,14 +69,13 @@ export default {
 }
 </script>
 <style>
-
-.project.complete{
-  border-left: 4px solid #3CD1C2;
+.project.complete {
+  border-left: 4px solid #3cd1c2;
 }
-.project.ongoing{
-  border-left: 4px solid orange
+.project.ongoing {
+  border-left: 4px solid orange;
 }
-.project.overdue{
+.project.overdue {
   border-left: 4px solid tomato;
 }
 </style>
