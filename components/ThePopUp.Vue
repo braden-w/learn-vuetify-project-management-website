@@ -28,3 +28,8 @@
   },
   methods: {
     submit() {
+  methods: {
+    submit() {
+      console.log(this.title, this.content)
+    },
+  },
