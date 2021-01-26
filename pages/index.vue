@@ -3,7 +3,7 @@
     <h1 class="subtitle-1 grey--text">Dashboard</h1>
     <v-container class="my-5">
       <v-card v-for="project in projects" :key="project.title" class="pa-3">
-        <v-row>
+        <v-row :class="`project ${project.status}`">
           <v-col cols="12" md="6"
             ><div class="caption grey--text">Project Title</div>
             <div>{{ project.title }}</div>
