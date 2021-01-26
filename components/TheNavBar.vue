@@ -7,7 +7,7 @@
       <v-spacer></v-spacer>
       <v-btn flat color="grey">
         <span>Sign Out</span>
-        <v-icon>mdi-exit-to-app</v-icon>
+        <v-icon right>mdi-exit-to-app</v-icon>
       </v-btn>
     </v-toolbar>
   </nav>
