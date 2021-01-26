@@ -4,16 +4,16 @@
     <v-container class="my-5">
       <v-card v-for="project in projects" :key="project.title" class="pa-3">
         <v-row :class="`project ${project.status}`">
-          <v-col cols="12" md="6"
-            ><div class="caption grey--text">Project Title</div>
+          <v-col cols="12" md="6">
+            <div class="caption grey--text">Project Title</div>
             <div>{{ project.title }}</div>
           </v-col>
           <v-col cols="6" md="2">
             <div class="caption grey--text">Person</div>
             <div>{{ project.person }}</div>
           </v-col>
-          <v-col cols="6" md="2"
-            ><div class="caption grey--text">Due</div>
+          <v-col cols="6" md="2">
+            <div class="caption grey--text">Due</div>
             <div>{{ project.due }}</div>
           </v-col>
           <v-col cols="22" md="2"
