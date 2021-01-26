@@ -7,6 +7,12 @@
     </template>
     <v-card>
       <v-card-title>Add New Project</v-card-title>
+      <v-card-text>
+        <v-form class="px-3">
+          <v-text-field label="Title" v-model="title"></v-text-field>
+          <v-textarea label="Information" v-model="content"></v-textarea>
+        </v-form>
+      </v-card-text>
     </v-card>
   </v-dialog>
 </template>
