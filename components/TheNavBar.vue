@@ -18,6 +18,9 @@
           <v-list-item-action>
             <v-icon class="white--text">mdi-view-dashboard</v-icon>
           </v-list-item-action>
+          <v-list-item-content>
+            <v-list-item-title class="white--text">Dashboard</v-list-item-title>
+          </v-list-item-content>
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
