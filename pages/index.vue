@@ -5,7 +5,9 @@
       <v-card class="pa-3">
         <v-row>
           <v-col cols="12" md="6">Project Title</v-col>
-          <v-col cols="6" md="3">Person</v-col>
+          <v-col cols="6" md="2">Person</v-col>
+          <v-col cols="6" md="2">Due</v-col>
+          <v-col cols="22" md="2">Status</v-col>
         </v-row></v-card
       >
     </v-container>
