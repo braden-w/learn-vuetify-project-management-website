@@ -8,7 +8,6 @@
           <template #activator="{ on: onButton }">
             <v-btn
               small
-              flat
               color="light-grey"
               v-on="onButton"
               @click="sortBy(sort.query)"
