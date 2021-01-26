@@ -20,6 +20,7 @@
       <v-icon>mdi-heart</v-icon>
     </v-btn>
     <v-btn class="hidden-md-and-down">Hidden for middle and down</v-btn>
+    <v-btn class="hidden-md-and-up">Hidden for middle and up</v-btn>
   </div>
 </template>
 
