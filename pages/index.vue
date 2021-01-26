@@ -19,7 +19,7 @@
     <v-btn fab depressed class="pink white--text">
       <v-icon>mdi-heart</v-icon>
     </v-btn>
-    <v-btn class="hidden-md-and-down">Hidden for middle and lower</v-btn>
+    <v-btn class="hidden-md-and-down">Hidden for middle and down</v-btn>
   </div>
 </template>
 
