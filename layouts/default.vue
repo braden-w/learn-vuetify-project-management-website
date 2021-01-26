@@ -1,6 +1,9 @@
 <template>
   <v-app class="grey lighten-4">
-    <v-content><TheNavBar /> <Nuxt /></v-content>
+    <v-main class="mx-16">
+      <TheNavBar />
+      <div class="mx-24"><Nuxt /></div>
+    </v-main>
   </v-app>
 </template>
 
