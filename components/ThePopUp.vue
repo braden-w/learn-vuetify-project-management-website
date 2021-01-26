@@ -9,8 +9,8 @@
       <v-card-title>Add New Project</v-card-title>
       <v-card-text>
         <v-form class="px-3">
-          <v-text-field label="Title" v-model="title"></v-text-field>
-          <v-textarea label="Information" v-model="content"></v-textarea>
+          <v-text-field v-model="title" label="Title"></v-text-field>
+          <v-textarea v-model="content" label="Information"></v-textarea>
         </v-form>
       </v-card-text>
     </v-card>
@@ -18,7 +18,14 @@
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      title: '',
+      content: '',
+    }
+  },
+}
 </script>
 
 <style></style>
