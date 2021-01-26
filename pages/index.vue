@@ -13,7 +13,7 @@
             ><v-icon left>{{ sort.icon }}</v-icon>
             <span class="caption text-lowercase">By {{ sort.title }}</span>
           </v-btn>
-          <span>Sort projects by project name</span></v-tooltip
+          <span>Sort projects by {{ sort.title }}</span></v-tooltip
         >
       </v-row>
       <v-card v-for="project in projects" :key="project.title" class="pa-3">
