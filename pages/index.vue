@@ -16,6 +16,9 @@
       <span>Email me</span>
       <v-icon right>mdi-email</v-icon>
     </v-btn>
+    <v-btn depressed class="pink white--text">
+      <v-icon>mdi-heart</v-icon>
+    </v-btn>
   </div>
 </template>
 
