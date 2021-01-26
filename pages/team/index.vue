@@ -11,14 +11,14 @@
           md="4"
           lg="3"
         >
-          <v-card class="text-xs-center ma-3">
-            <v-responsive class="pt-4">Image goes here</v-responsive>
+          <v-card class="ma-3">
+            <v-container class="pt-4">Image goes here</v-container>
             <v-card-text>
               <div class="subtitle-1">{{ person.name }}</div>
               <div class="grey--text">{{ person.role }}</div>
             </v-card-text>
             <v-card-actions>
-              <v-btn color="light--grey">
+              <v-btn depressed color="light--grey">
                 <v-icon small left>mdi-message</v-icon>
                 <span>Message</span>
               </v-btn>
