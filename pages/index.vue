@@ -8,6 +8,7 @@
       porro?
     </p>
     <h4 class="display-1">Display 1</h4>
+    <p class="headline">This is a headline</p>
   </div>
 </template>
 
