@@ -6,3 +6,23 @@
             
         </v-form>
       </v-card-text>
+  methods: {
+    submit() {
+      console.log(this.title, this.content)
+    },
+  },
+  methods: {
+    submit() {
+      console.log(this.title, this.content)
+    },
+  },
+  methods: {
+    submit() {
+      console.log(this.title, this.content)
+    },
+  },
+  methods: {
+    submit() {
+      console.log(this.title, this.content)
+    },
+  },
