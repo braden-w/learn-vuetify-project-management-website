@@ -4,16 +4,13 @@
     <v-container class="my-5">
       <v-row class="mb-3">
         <v-tooltip v-for="sort in sorts" :key="sort.query" top>
-          <v-btn
-            slot="activator"
-            small
-            flat
-            color="light-grey"
-            @click="sortBy(sort.query)"
-          >
-            <v-icon left>{{ sort.icon }}</v-icon>
-            <span class="caption text-lowercase">By {{ sort.title }}</span>
-          </v-btn>
+          <template #activator="{ on, attrs }">
+            <v-btn small flat color="light-grey" @click="sortBy(sort.query)"
+              ><v-icon left>{{ sort.icon }}</v-icon>
+              <span class="caption text-lowercase">By {{ sort.title }}</span>
+            </v-btn>
+          </template>
+
           <span>Sort projects by {{ sort.title }}</span>
         </v-tooltip>
       </v-row>
