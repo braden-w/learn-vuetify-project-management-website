@@ -17,6 +17,7 @@
             <div>{{ project.due }}</div>
           </v-col>
           <v-col cols="22" md="2">
+            <div class="right" id="chips-container">
               <v-chip
                 small
                 my-auto
@@ -24,6 +25,7 @@
               >
                 {{ project.status }}
               </v-chip>
+            </div>
           </v-col>
         </v-row>
       </v-card>
@@ -82,5 +84,14 @@ export default {
 }
 .project.overdue {
   border-left: 4px solid tomato;
+}
+#chips-container .complete {
+  background: #3cd1c2;
+}
+#chips-container .ongoing {
+  background: #ffaa2c;
+}
+#chips-container .overdue {
+  background: #f83e70;
 }
 </style>
