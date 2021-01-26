@@ -2,6 +2,7 @@
   <div class="dashboard">
     <h1 class="subtitle-1 grey--text">Dashboard</h1>
     <v-container class="my-5">
+      <v-row class="mb-3"></v-row>
       <v-card v-for="project in projects" :key="project.title" class="pa-3">
         <v-row :class="`project ${project.status}`">
           <v-col cols="12" md="6">
@@ -17,7 +18,7 @@
             <div>{{ project.due }}</div>
           </v-col>
           <v-col cols="22" md="2">
-            <div class="right" id="chips-container">
+            <div id="chips-container" class="right">
               <v-chip
                 small
                 my-auto
