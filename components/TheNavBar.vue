@@ -10,6 +10,9 @@
         <v-icon right>mdi-exit-to-app</v-icon>
       </v-btn>
     </v-toolbar>
+    <v-navigation-drawer app>
+      <p>test</p>
+    </v-navigation-drawer>
   </nav>
 </template>
 
