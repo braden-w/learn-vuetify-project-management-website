@@ -1,5 +1,13 @@
 <template>
-  <div class="home"><h1>Homepage</h1></div>
+  <div class="home">
+    <h1>Homepage</h1>
+    <p class="red">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ea vero
+      labore molestiae illum, nulla accusantium id totam nostrum ratione autem
+      beatae, quas dicta consequatur repudiandae libero aliquam cupiditate
+      porro?
+    </p>
+  </div>
 </template>
 
 <script>
