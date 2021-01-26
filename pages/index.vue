@@ -8,7 +8,7 @@
           :key="sort.query"
           small
           flat
-          color="grey"
+          color="light-grey"
           @click="sortBy(sort.query)"
         >
           <v-icon left>{{ sort.icon }}</v-icon>
