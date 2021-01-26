@@ -12,7 +12,9 @@
           lg="3"
         >
           <v-card class="ma-3">
-            <v-container class="pt-4">Image goes here</v-container>
+            <v-avatar size="100">
+              <img :src="person.avatar" alt="Profile Picture" />
+            </v-avatar>
             <v-card-text>
               <div class="subtitle-1">{{ person.name }}</div>
               <div class="grey--text">{{ person.role }}</div>
@@ -35,11 +37,27 @@ export default {
   data() {
     return {
       team: [
-        { name: 'The Net Ninja', role: 'Web developer' },
-        { name: 'Ryu', role: 'Graphic designer' },
-        { name: 'Chun Li', role: 'Web developer' },
-        { name: 'Gouken', role: 'Social media maverick' },
-        { name: 'Yoshi', role: 'Sales guru' },
+        {
+          name: 'The Net Ninja',
+          role: 'Web developer',
+          avatar: '@/assets/avatar-1.png',
+        },
+        {
+          name: 'Ryu',
+          role: 'Graphic designer',
+          avatar: '@/assets/avatar-2.png',
+        },
+        {
+          name: 'Chun Li',
+          role: 'Web developer',
+          avatar: '@/assets/avatar-3.png',
+        },
+        {
+          name: 'Gouken',
+          role: 'Social media maverick',
+          avatar: '@/assets/avatar-4.png',
+        },
+        { name: 'Yoshi', role: 'Sales guru', avatar: '@/assets/avatar-5.png' },
       ],
     }
   },
