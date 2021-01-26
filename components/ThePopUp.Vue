@@ -19,7 +19,7 @@
   methods: {
     submit() {
       console.log(this.title, this.content)
-          <v-btn class="success">Add project</v-btn>
+          <v-btn class="success" @click="submit">Add project</v-btn>
   },
   methods: {
     submit() {
