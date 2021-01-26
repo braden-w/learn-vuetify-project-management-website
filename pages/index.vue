@@ -17,7 +17,13 @@
             <div>{{ project.due }}</div>
           </v-col>
           <v-col cols="22" md="2">
-            <v-chip>{{ project.status }}</v-chip>
+              <v-chip
+                small
+                my-auto
+                :class="`${project.status} caption white--text `"
+              >
+                {{ project.status }}
+              </v-chip>
           </v-col>
         </v-row>
       </v-card>
