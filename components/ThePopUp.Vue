@@ -26,3 +26,5 @@
       console.log(this.title, this.content)
     },
   },
+  methods: {
+    submit() {
