@@ -5,7 +5,7 @@
     <v-btn depressed color="pink">Click me</v-btn>
     <v-btn flat color="pink">Click me</v-btn>
     <v-btn depressed class="pink white--text">
-      <v-icon>email</v-icon>
+      <v-icon left>mdi-email</v-icon>
     </v-btn>
   </div>
 </template>
