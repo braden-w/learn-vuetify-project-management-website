@@ -3,11 +3,11 @@
     <h1 class="subtitle-1 grey--text">Dashboard</h1>
     <v-container class="my-5">
       <v-row class="mb-3">
-        <v-btn small flat color="grey">
+        <v-btn small flat color="grey" @click="sortBy('title')">
           <v-icon left>mdi-folder</v-icon>
           <span class="caption text-lowercase">By project name</span>
         </v-btn>
-        <v-btn small flat color="grey">
+        <v-btn small flat color="grey" @click="sortBy('person')">
           <v-icon left>mdi-account</v-icon>
           <span class="caption text-lowercase">By person</span>
         </v-btn>
