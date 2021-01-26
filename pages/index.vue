@@ -3,17 +3,18 @@
     <h1 class="subtitle-1 grey--text">Dashboard</h1>
     <v-container class="my-5">
       <v-row class="mb-3">
-        <v-btn
-          v-for="sort in sorts"
-          :key="sort.query"
-          small
-          flat
-          color="light-grey"
-          @click="sortBy(sort.query)"
+        <v-tooltip v-for="sort in sorts" :key="sort.query" top>
+          <v-btn
+            slot="activator"
+            small
+            flat
+            color="light-grey"
+            @click="sortBy(sort.query)"
+            ><v-icon left>{{ sort.icon }}</v-icon>
+            <span class="caption text-lowercase">By {{ sort.title }}</span>
+          </v-btn>
+          <span>Sort projects by project name</span></v-tooltip
         >
-          <v-icon left>{{ sort.icon }}</v-icon>
-          <span class="caption text-lowercase">By {{ sort.title }}</span>
-        </v-btn>
       </v-row>
       <v-card v-for="project in projects" :key="project.title" class="pa-3">
         <v-row :class="`project ${project.status}`">
