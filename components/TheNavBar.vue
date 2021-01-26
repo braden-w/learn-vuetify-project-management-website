@@ -1,5 +1,5 @@
 <template>
-  <nav><v-toolbar flat>Yep</v-toolbar></nav>
+  <nav><v-toolbar flat app>Yep</v-toolbar></nav>
 </template>
 
 <script>
