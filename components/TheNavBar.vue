@@ -2,7 +2,7 @@
   <nav>
     <v-snackbar v-model="snackbar" :timeout="4000" top color="success">
       <span>Awesome! You added a new project.</span>
-      <v-btn depressed color="white" @click="snackbar = false">Close</v-btn>
+      <v-btn depressed @click="snackbar = false">Close</v-btn>
     </v-snackbar>
     <v-app-bar app>
       <v-app-bar-nav-icon class="grey--text" @click="drawer = !drawer">
