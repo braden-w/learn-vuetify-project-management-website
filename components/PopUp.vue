@@ -22,10 +22,11 @@
           <v-menu>
             <template #activator="{ on, attrs }">
               <v-text-field
+                v-bind="attrs"
                 :value="date"
-                label="due date"
+                label="Due Date"
                 prepend-icon="mdi-calendar"
-                @click="on"
+                v-on="on"
               >
               </v-text-field>
             </template>
