@@ -1,5 +1,5 @@
 <template>
-  <v-dialog v-model="dialog">
+  <v-dialog>
     <template #activator="{ on, attrs }">
       <v-btn color="secondary" dark v-bind="attrs" v-on="on">
         Create Project
