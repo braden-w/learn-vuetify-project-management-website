@@ -18,7 +18,7 @@
           <img src="@/assets/avatar-1.png" alt="" />
         </v-avatar>
         <p class="white--text subtitle-1 mt-1">Net Ninja</p>
-        <ThePopUp />
+        <PopUp />
       </div>
       <v-list>
         <v-list-item
@@ -42,9 +42,9 @@
 </template>
 
 <script>
-import ThePopUp from '@/components/TheNavBar'
+import PopUp from '@/components/TheNavBar'
 export default {
-  components: { ThePopUp },
+  components: { PopUp },
   data() {
     return {
       drawer: false,
