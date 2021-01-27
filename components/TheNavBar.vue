@@ -1,5 +1,9 @@
 <template>
   <nav>
+    <v-snackbar v-model="snackbar" :timeout="4000" top color="success">
+      <span>Awesome! You added a new project.</span>
+      <v-btn depressed color="white">Close</v-btn>
+    </v-snackbar>
     <v-app-bar app>
       <v-app-bar-nav-icon class="grey--text" @click="drawer = !drawer">
       </v-app-bar-nav-icon>
@@ -53,6 +57,7 @@ export default {
         { icon: 'mdi-folder', text: 'My Projects', route: '/projects' },
         { icon: 'mdi-account-multiple', text: 'Team', route: '/team' },
       ],
+      snackbar: true,
     }
   },
 }
