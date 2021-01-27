@@ -1,6 +1,5 @@
 import colors from 'vuetify/es5/util/colors'
-require('dotenv').config()
-
+import { firebaseConfig } from './firebaseConfig.js'
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
@@ -15,6 +14,15 @@ export default {
       { hid: 'description', name: 'description', content: '' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+  },
+
+  env: {
+    apiKey: process.env.apiKey,
+    authDomain: process.env.authDomain,
+    projectId: process.env.projectId,
+    storageBucket: process.env.storageBucket,
+    messagingSenderId: process.env.messagingSenderId,
+    appId: process.env.appId,
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -41,14 +49,7 @@ export default {
     [
       '@nuxtjs/firebase',
       {
-        config: {
-          apiKey: process.env.apiKey,
-          authDomain: process.env.authDomain,
-          projectId: process.env.projectId,
-          storageBucket: process.env.storageBucket,
-          messagingSenderId: process.env.messagingSenderId,
-          appId: process.env.appId,
-        },
+        config: firebaseConfig,
         services: {
           firestore: true,
         },
