@@ -46,6 +46,7 @@ export default {
       title: '',
       content: '',
       date: '',
+      inputRules: [(v) => v.length >= 3 || 'Please fill in required inputs'],
     }
   },
   methods: {
