@@ -51,12 +51,14 @@ export default {
       content: '',
       date: '',
       inputRules: [(v) => v.length >= 3 || 'Please fill in required inputs'],
+      loading: false,
     }
   },
   methods: {
     async submit() {
       if (this.$refs.form.validate()) {
         try {
+          this.loading = true
           await this.$fire.firestore.collection('projects').add({
             title: this.title,
             content: this.content,
@@ -64,6 +66,7 @@ export default {
             person: 'Braden',
             status: 'ongoing',
           })
+          this.loading = false
           console.log('Success')
         } catch (err) {
           console.error(err)
