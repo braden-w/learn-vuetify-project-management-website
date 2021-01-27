@@ -52,7 +52,7 @@ export default {
       date: '',
       inputRules: [(v) => v.length >= 3 || 'Please fill in required inputs'],
       loading: false,
-      dialog=false,
+      dialog: false,
     }
   },
   methods: {
@@ -68,7 +68,7 @@ export default {
             status: 'ongoing',
           })
           this.loading = false
-          this.dialog=true
+          this.dialog = false
           console.log('Success')
         } catch (err) {
           console.error(err)
