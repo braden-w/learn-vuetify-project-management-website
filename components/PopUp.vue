@@ -1,5 +1,5 @@
 <template>
-  <v-dialog>
+  <v-dialog v-model="dialog">
     <template #activator="{ on, attrs }">
       <v-btn color="secondary" dark v-bind="attrs" v-on="on">
         Create Project
@@ -52,6 +52,7 @@ export default {
       date: '',
       inputRules: [(v) => v.length >= 3 || 'Please fill in required inputs'],
       loading: false,
+      dialog=false,
     }
   },
   methods: {
@@ -67,6 +68,7 @@ export default {
             status: 'ongoing',
           })
           this.loading = false
+          this.dialog=true
           console.log('Success')
         } catch (err) {
           console.error(err)
