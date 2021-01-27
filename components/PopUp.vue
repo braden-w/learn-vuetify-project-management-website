@@ -34,7 +34,9 @@
             </template>
             <v-date-picker v-model="date" no-title scrollable> </v-date-picker>
           </v-menu>
-          <v-btn class="success" @click="submit">Add project</v-btn>
+          <v-btn class="success" :loading="loading" @click="submit"
+            >Add project</v-btn
+          >
         </v-form>
       </v-card-text>
     </v-card>
