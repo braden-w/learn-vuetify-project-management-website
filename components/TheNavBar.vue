@@ -57,7 +57,7 @@ export default {
         { icon: 'mdi-folder', text: 'My Projects', route: '/projects' },
         { icon: 'mdi-account-multiple', text: 'Team', route: '/team' },
       ],
-      snackbar: true,
+      snackbar: false,
     }
   },
 }
