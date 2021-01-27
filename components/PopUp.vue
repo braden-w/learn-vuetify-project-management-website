@@ -53,7 +53,9 @@ export default {
   },
   methods: {
     submit() {
-      console.log(this.title, this.content)
+      if (this.$refs.form.validate()) {
+        console.log(this.title, this.content)
+      }
     },
   },
 }
