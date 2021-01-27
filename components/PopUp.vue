@@ -52,9 +52,20 @@ export default {
     }
   },
   methods: {
-    submit() {
+    async submit() {
       if (this.$refs.form.validate()) {
-        console.log(this.title, this.content)
+        try {
+          await this.$fire.firestore.collection('projects').add({
+            title: this.title,
+            content: this.content,
+            due: this.date,
+            person: 'Braden',
+            status: 'ongoing',
+          })
+          console.log('Success')
+        } catch (err) {
+          console.error(err)
+        }
       }
     },
   },
