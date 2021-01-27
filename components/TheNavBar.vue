@@ -22,7 +22,7 @@
           <img src="@/assets/avatar-1.png" alt="" />
         </v-avatar>
         <p class="white--text subtitle-1 mt-1">Net Ninja</p>
-        <PopUp />
+        <PopUp @projectAdded="snackbar = true" />
       </div>
       <v-list>
         <v-list-item

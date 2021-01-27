@@ -69,6 +69,7 @@ export default {
           })
           this.loading = false
           this.dialog = false
+          this.$emit('projectAdded')
           console.log('Success')
         } catch (err) {
           console.error(err)
