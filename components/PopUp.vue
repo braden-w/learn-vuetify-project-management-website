@@ -8,11 +8,12 @@
     <v-card>
       <v-card-title>Add New Project</v-card-title>
       <v-card-text>
-        <v-form class="px-3">
+        <v-form ref="form" class="px-3">
           <v-text-field
             v-model="title"
             label="Title"
             prepend-icon="mdi-folder"
+            :rules="inputRules"
           />
           <v-textarea
             v-model="content"
@@ -26,6 +27,7 @@
                 :value="date"
                 label="Due Date"
                 prepend-icon="mdi-calendar"
+                :rules="inputRules"
                 v-on="on"
               >
               </v-text-field>
