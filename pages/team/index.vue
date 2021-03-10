@@ -40,24 +40,28 @@ export default {
         {
           name: 'Braden Wong',
           role: 'Web developer',
-          avatar: '@/assets/avatar-1.png',
+          avatar: '@/assets/Profile Picture',
         },
         {
           name: 'Ruobin',
           role: 'Graphic designer',
-          avatar: '@/assets/avatar-2.png',
+          avatar: '@/assets/Profile Picture',
         },
         {
           name: 'Jason',
           role: 'Web developer',
-          avatar: '@/assets/avatar-3.png',
+          avatar: '@/assets/Profile Picture',
         },
         {
           name: 'Sam',
           role: 'Social media maverick',
-          avatar: '@/assets/avatar-4.png',
+          avatar: '@/assets/Profile Picture',
         },
-        { name: 'Yoshi', role: 'Sales guru', avatar: '@/assets/avatar-5.png' },
+        {
+          name: 'Yoshi',
+          role: 'Sales guru',
+          avatar: '@/assets/Profile Picture',
+        },
       ],
     }
   },
