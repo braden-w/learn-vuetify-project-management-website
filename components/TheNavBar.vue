@@ -19,7 +19,7 @@
     <v-navigation-drawer v-model="drawer" app class="primary">
       <div class="d-flex flex-column align-center justify-center">
         <v-avatar size="100">
-          <img src="@/assets/avatar-1.png" alt="" />
+          <img src="@/assets/Profile Picture.jpg" alt="" />
         </v-avatar>
         <p class="white--text subtitle-1 mt-1">Braden Wong</p>
         <PopUp @projectAdded="snackbar = true" />
