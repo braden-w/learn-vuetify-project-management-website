@@ -8,8 +8,8 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - learn-vuetify-with-net-ninja',
-    title: 'learn-vuetify-with-net-ninja',
+    titleTemplate: '%s - learn-vuetify-project-management-website',
+    title: 'learn-vuetify-project-management-website',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
