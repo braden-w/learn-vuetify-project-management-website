@@ -62,7 +62,7 @@ export default {
     myProjects() {
       return this.projects.filter((project) => {
         return (
-          project.person === 'The Net Ninja' && project.status !== 'complete'
+          project.person === 'Braden Wong' && project.status !== 'complete'
         )
       })
     },
