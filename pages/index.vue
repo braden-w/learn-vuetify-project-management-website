@@ -59,7 +59,7 @@ export default {
       projects: [
         {
           title: 'Design a new website',
-          person: 'The Net Ninja',
+          person: 'Braden Wong',
           due: '1st Jan 2019',
           status: 'ongoing',
           content:
@@ -67,7 +67,7 @@ export default {
         },
         {
           title: 'Code up the homepage',
-          person: 'Chun Li',
+          person: 'Jason',
           due: '10th Jan 2019',
           status: 'complete',
           content:
@@ -75,7 +75,7 @@ export default {
         },
         {
           title: 'Design video thumbnails',
-          person: 'Ryu',
+          person: 'Ruobin',
           due: '20th Dec 2018',
           status: 'complete',
           content:
@@ -83,7 +83,7 @@ export default {
         },
         {
           title: 'Create a community forum',
-          person: 'Gouken',
+          person: 'Sam',
           due: '20th Oct 2018',
           status: 'overdue',
           content:

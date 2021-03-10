@@ -38,22 +38,22 @@ export default {
     return {
       team: [
         {
-          name: 'The Net Ninja',
+          name: 'Braden Wong',
           role: 'Web developer',
           avatar: '@/assets/avatar-1.png',
         },
         {
-          name: 'Ryu',
+          name: 'Ruobin',
           role: 'Graphic designer',
           avatar: '@/assets/avatar-2.png',
         },
         {
-          name: 'Chun Li',
+          name: 'Jason',
           role: 'Web developer',
           avatar: '@/assets/avatar-3.png',
         },
         {
-          name: 'Gouken',
+          name: 'Sam',
           role: 'Social media maverick',
           avatar: '@/assets/avatar-4.png',
         },
