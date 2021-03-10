@@ -13,7 +13,7 @@
         >
           <v-card class="ma-3">
             <v-avatar size="100">
-              <img :src="person.avatar" alt="Profile Picture" />
+              <img :src="person.avatar" />
             </v-avatar>
             <v-card-text>
               <div class="subtitle-1">{{ person.name }}</div>
@@ -40,28 +40,24 @@ export default {
         {
           name: 'Braden Wong',
           role: 'Web developer',
-          avatar: '@/assets/Profile Picture',
+          avatar: '@/assets/avatar-1.png',
         },
         {
           name: 'Ruobin',
           role: 'Graphic designer',
-          avatar: '@/assets/Profile Picture',
+          avatar: '@/assets/avatar-2.png',
         },
         {
           name: 'Jason',
           role: 'Web developer',
-          avatar: '@/assets/Profile Picture',
+          avatar: '@/assets/avatar-3.png',
         },
         {
           name: 'Sam',
           role: 'Social media maverick',
-          avatar: '@/assets/Profile Picture',
+          avatar: '@/assets/avatar-4.png',
         },
-        {
-          name: 'Yoshi',
-          role: 'Sales guru',
-          avatar: '@/assets/Profile Picture',
-        },
+        { name: 'Yoshi', role: 'Sales guru', avatar: '@/assets/avatar-5.png' },
       ],
     }
   },
