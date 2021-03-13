@@ -1,4 +1,4 @@
-# learn-vuetify-with-net-ninja
+# Vue + Nuxt.js + Vuetifiy Project Management Website
 
 ## Build Setup
 
